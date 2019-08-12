@@ -1,0 +1,27 @@
+<style>
+     #floating{
+          position:fixed;
+          color: rgb(255, 0, 0);
+          background: rgba(0,0,0,0);
+          width: 100%;
+          height: 50%;
+          top: 25%;
+          left:20%;
+          padding: 10px;
+          overflow:auto;
+          z-index: 10;
+          font-family:'Courier New', Courier, monospace;
+          font-size:30px;
+     }
+
+</style>
+<div class="msg" id="floating">
+     <p id="sendMessage"> Please Wait... training the neural network </p>
+</div>
+
+<canvas id="gameCanvas" width="1000" height="650"></canvas>
+
+
+<script type="text/javascript" src="/public/js/matrixOperations.js"></script>
+<script type="text/javascript" src="/public/js/neuralNetworks.js"></script>
+<script src = "/public/js/asteroidAIGame.js"></script>mag
