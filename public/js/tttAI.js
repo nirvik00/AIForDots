@@ -67,8 +67,22 @@ function bestSpot(){
     if(playAi===true) {
         return minimax(origBoard, aiPlayer).index;
     }else {
-        return emptySquares()[0];
+        var emptyCells=shuffleArray(emptySquares());
+        return emptyCells[0];
     }
+}
+
+//
+function shuffleArray(arr){
+    var newArr=Array.from(arr);
+    for(let i=0; i<newArr.length; i++){
+        let a=i;
+        let b= Math.floor(Math.random()*arr.length);
+        var tmp=newArr[a];
+        newArr[a]=newArr[b];
+        newArr[b]=tmp;
+    }
+    return newArr;
 }
 
 // board states
