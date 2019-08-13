@@ -1,3 +1,26 @@
+<style>
+     #floating{
+          position:fixed;
+          color: rgb(255, 0, 0);
+          background: rgba(0,0,0,0.25);
+          width: 30%;
+          height: 50%;
+          top: 70%;
+          left:15%;
+          overflow:auto;
+          z-index: 10;
+          font-family:'Courier New', Courier, monospace;
+          font-size:15px;
+     }
+
+</style>
+<div class="msg" id="floating">
+     <p id="sendMessage"> spacebar : shoot lasers</p>
+     <p id="sendMessage"> left Arrow : turn left</p>
+     <p id="sendMessage"> right Arrow : turn right</p>
+     <p id="sendMessage"> up Arrow : accelarate forward</p>
+</div>
+
 <canvas id="gameCanvas" width="1000" height="650"></canvas>
 <div class="msg" id="info">
     
