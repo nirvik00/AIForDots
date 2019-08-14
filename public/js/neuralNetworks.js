@@ -4,7 +4,7 @@
     NEURAL NETWORK
  ***********************/
 
- const LOG_ON=true; // whether or not to show error logging
+ const LOG_ON=false; // whether or not to show error logging
  const LOG_FREQ=20000; // how often to show errors / iterations
 
 
