@@ -80,58 +80,6 @@ newGame();
 var nn;
 var aiShootTime=0;
 if(AUTOMATION_ON){
-    let m0=new Matrix(2,3,[
-        [2,1,-1],
-        [4,3,0]
-    ]);
-
-    let m1=new Matrix(2,3,[
-        [2,1,-1],
-        [4,3,0]
-    ]);
-
-    let m2=new Matrix(2,2,[
-        [1,-1],
-        [3,0]
-    ]);
-
-    // m0.randomWeights();
-    // console.table(m0.data);
-    // console.table(m1.data);
-    // console.table(m2.data);
-
-    // check matrix operations
-    // console.table(Matrix.add(m0,m1).data); // print sum of two matrices
-    // console.table(Matrix.subtract(m0,m1).data); // print diff of two matrices
-    // console.table(Matrix.multiply(m0,m1).data); // print diff of two matrices
-    // console.table(Matrix.dot(m2,m1).data); // print diff of two matrices
-
-    // let arr=[12,3,4,5];
-    // console.log(arr);
-    // console.table(Matrix.convertFromArray(arr).data);
-    // console.table(Matrix.map(m2, x => x*2).data);
-    // console.table(Matrix.transpose(m1).data);
-
-    // check neural network constructor- var nn is declared before function
-    /* XOR training
-    nn = new NeuralNetwork(NUM_INPUTS, NUM_HIDDEN, NUM_OUTPUTS);
-    nn.feedForward([0,1]);
-    for(let i=0; i<NUM_SAMPLES; i++){
-        // TEST XOR gate logic
-        // 00=1, 01=1, 10=1, 11=0
-        let input0=Math.round(Math.random()); // 0 or 1
-        let input1= Math.round(Math.random()); // 0 or 1
-        let output=input0==input1 ? 0 : 1;
-        nn.train([input0, input1], [output]);
-    }
-
-    // test output
-    console.log("0, 0 = " + nn.feedForward([0,0]).data );
-    console.log("0, 1 = " + nn.feedForward([0,1]).data );
-    console.log("1, 0 = " + nn.feedForward([1,0]).data );
-    console.log("1, 1 = " + nn.feedForward([1,1]).data );
-    */
-
     // AI GAME PLAY 
     // train the network
     let ax, ay, sx, sy, sa;
@@ -474,7 +422,6 @@ function update(){
         let sa=ship.a;
         let angle=angleToPoint(sx,sy, sa, ax, ay);
         let predict=nn.feedForward(normalizeInputs(ax, ay, angle, sa)).data[0][0];
-        // console.log(predict);
         //make a turn
         let dLeft= Math.abs(predict - OUTPUT_LEFT);
         let dRight=Math.abs(predict - OUTPUT_RIGHT);
