@@ -3,7 +3,7 @@
 //  game setup
 //
 //
-playAI=false;
+playAI=true;
 var origBoard;
 const huPlayer="o";
 const aiPlayer="x";
