@@ -56,7 +56,7 @@ const ROIDS_PTS_SML=100;
 // lasers
 const LASER_MAX= 10;// max lasers on screen
 const LASER_SPD = 500; // speed of lasers 
-const LASER_DIST= 0.7; // MAX dist laser can travel as fraction of screen width
+const LASER_DIST= 0.5; // MAX dist laser can travel as fraction of screen width
 const LASER_EXPLODE_DUR=0.1 // duration of laser's explosion in seconds
 
 
