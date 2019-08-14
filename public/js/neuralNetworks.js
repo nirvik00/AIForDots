@@ -106,6 +106,7 @@ class NeuralNetwork{
         let outputErrors=Matrix.subtract(targets, outputs);
         
         // error logging
+        /*
         if(LOG_ON){
             if(this.logCount == LOG_FREQ){
                 console.log("error = " + outputErrors.data[0][0]);
@@ -115,7 +116,7 @@ class NeuralNetwork{
                 this.logCount =LOG_FREQ;
             }
         }
-
+        */
         // NEURAL NET TRAIN: calculate the deltas
         let outputDerivs = Matrix.map(outputs, x=> sigmoid(x, true));
         let outputDeltas=Matrix.multiply(outputErrors, outputDerivs);
