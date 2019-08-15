@@ -6,7 +6,7 @@ class Paddle{
         this.height=5;
         this.position={
             x:this.gameWidth/2 - this.width/2,
-            y:this.gameHeight - this.height - 30
+            y:this.gameHeight - this.height - 40
         };
         this.maxSpeed=10;
         this.speed=0;
