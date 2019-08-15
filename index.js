@@ -23,6 +23,9 @@ app.get('/games/Tictactoe', (req, res)=>{
     res.render('games/Tictactoe');
 });
 
+app.get('/games/pong', (req,res) => {
+    res.render('games/pong');
+});
 
 app.get('/games/asteroids', (req, res)=>{
     res.render('games/asteroids');
