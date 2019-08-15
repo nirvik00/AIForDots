@@ -3,7 +3,7 @@ class Paddle{
         this.gameWidth=game.gameWidth;
         this.gameHeight=game.gameHeight;
         this.width=100;
-        this.height=20;
+        this.height=5;
         this.position={
             x:this.gameWidth/2 - this.width/2,
             y:this.gameHeight - this.height - 30

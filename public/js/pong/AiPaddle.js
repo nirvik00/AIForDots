@@ -4,7 +4,7 @@ class aiPaddle{
         this.W=this.game.gameWidth;
         this.H=this.game.gameHeight;
         this.width=100;
-        this.height=20;
+        this.height=5;
         this.destroy=[];
         // determine the brick x,y
         this.position={x: 200, y:20};
